@@ -11,9 +11,10 @@ pod 'RSAEncrypt'
 
 
 ## Features
-- openssl公钥对生成方法
-- RSA加密算法：RSAEncrypt
-- 对公钥文件进行base64编码
+
+- +(NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key; //使用 publickey 对String 加密
+- +(NSString *)PublicKeyStringFromFile:(NSString *)fileName; //从.der 文件提取 String publickey
+- openssl公钥对生成方法。
 
 ## Requirements
 
@@ -21,6 +22,13 @@ pod 'RSAEncrypt'
 - Xcode 7.2+
 
 ## Installation
+
+### Cocoapods
+
+```ruby
+pod 'RSAEncrypt'
+```
+
 ### Manually
 直接添加RSAEncrypt至工程，如果你的工程没有Base64可以需要同时导入[Base64](https://github.com/nicklockwood/Base64)
 
@@ -89,4 +97,8 @@ openssl rsa -in private_key.pem -out rsa_public_key_android.pem -pubout
 
 ## License
 
-This Demo is released under the MIT license.
+RSAEncrypt is released under the MIT license.
+
+## TODO
+
+* 添加解密方法
