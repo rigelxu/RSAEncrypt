@@ -20,6 +20,7 @@ pod 'RSAEncrypt'
 ## TODO
 
 * 添加解密方法
+* 解决 spec 依赖 Base64问题
 
 ## Requirements
 
