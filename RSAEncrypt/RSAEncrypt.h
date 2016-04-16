@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "Base64.h"
+#import "Base64/Base64.h"
 
 @interface RSAEncrypt : NSObject {
 
