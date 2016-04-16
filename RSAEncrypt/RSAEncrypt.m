@@ -1,5 +1,4 @@
 #import "RSAEncrypt.h"
-#import "Base64.h"
 
 @implementation RSAEncrypt
 
