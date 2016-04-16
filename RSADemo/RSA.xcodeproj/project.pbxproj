@@ -12,13 +12,13 @@
 		330F71211C4DE61E00446D0C /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 330F711D1C4DE61E00446D0C /* public_key.der */; };
 		330F71221C4DE61E00446D0C /* rsa_public_key_android.pem in Resources */ = {isa = PBXBuildFile; fileRef = 330F711E1C4DE61E00446D0C /* rsa_public_key_android.pem */; };
 		335FCB921CC263F400CE9595 /* RSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 335FCB911CC263F400CE9595 /* RSAEncrypt.m */; };
-		335FCB961CC27A2400CE9595 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 335FCB951CC27A2400CE9595 /* Base64.m */; };
 		338C47EE1C23B271000D29DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 338C47ED1C23B271000D29DF /* main.m */; };
 		338C47F11C23B271000D29DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338C47F01C23B271000D29DF /* AppDelegate.m */; };
 		338C47F41C23B271000D29DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338C47F31C23B271000D29DF /* ViewController.m */; };
 		338C47F71C23B271000D29DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338C47F51C23B271000D29DF /* Main.storyboard */; };
 		338C47F91C23B271000D29DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338C47F81C23B271000D29DF /* Assets.xcassets */; };
 		338C47FC1C23B271000D29DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338C47FA1C23B271000D29DF /* LaunchScreen.storyboard */; };
+		33B82D531CC27F2B00B241F4 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B82D521CC27F2B00B241F4 /* Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,6 @@
 		330F711E1C4DE61E00446D0C /* rsa_public_key_android.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key_android.pem; sourceTree = "<group>"; };
 		335FCB901CC263F400CE9595 /* RSAEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncrypt.h; sourceTree = "<group>"; };
 		335FCB911CC263F400CE9595 /* RSAEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncrypt.m; sourceTree = "<group>"; };
-		335FCB941CC27A2400CE9595 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		335FCB951CC27A2400CE9595 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		338C47E91C23B271000D29DF /* RSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338C47ED1C23B271000D29DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		338C47EF1C23B271000D29DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		338C47F81C23B271000D29DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338C47FB1C23B271000D29DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338C47FD1C23B271000D29DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B82D511CC27F2B00B241F4 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		33B82D521CC27F2B00B241F4 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,21 +67,13 @@
 		335FCB8F1CC263F400CE9595 /* RSAEncrypt */ = {
 			isa = PBXGroup;
 			children = (
-				335FCB931CC27A2400CE9595 /* Base64 */,
+				33B82D511CC27F2B00B241F4 /* Base64.h */,
+				33B82D521CC27F2B00B241F4 /* Base64.m */,
 				335FCB901CC263F400CE9595 /* RSAEncrypt.h */,
 				335FCB911CC263F400CE9595 /* RSAEncrypt.m */,
 			);
 			name = RSAEncrypt;
 			path = ../RSAEncrypt;
-			sourceTree = "<group>";
-		};
-		335FCB931CC27A2400CE9595 /* Base64 */ = {
-			isa = PBXGroup;
-			children = (
-				335FCB941CC27A2400CE9595 /* Base64.h */,
-				335FCB951CC27A2400CE9595 /* Base64.m */,
-			);
-			path = Base64;
 			sourceTree = "<group>";
 		};
 		338C47E01C23B271000D29DF = {
@@ -202,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				338C47F41C23B271000D29DF /* ViewController.m in Sources */,
-				335FCB961CC27A2400CE9595 /* Base64.m in Sources */,
+				33B82D531CC27F2B00B241F4 /* Base64.m in Sources */,
 				338C47F11C23B271000D29DF /* AppDelegate.m in Sources */,
 				335FCB921CC263F400CE9595 /* RSAEncrypt.m in Sources */,
 				338C47EE1C23B271000D29DF /* main.m in Sources */,
