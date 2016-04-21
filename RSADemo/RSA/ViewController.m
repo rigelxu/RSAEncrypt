@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [RSAEncrypt getPublicKeyFromFile];
-    [RSAEncrypt RSAEncrypt:@"test" publicKey:RSA_KEY_BASE64];
+    NSLog(@"%@", [RSAEncrypt RSAEncrypt:@"zn111111" publicKey:RSA_KEY_BASE64]);
 }
 
 - (void)didReceiveMemoryWarning {

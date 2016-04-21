@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'RSAEncrypt'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.license  = 'MIT'
   s.summary  = 'iOS 简单 RSA 加密方法。'
   s.description  = 'iOS 简单 RSA 加密方法，加密 key 使用字符串方式。使用系统库，包含如何创建钥匙对命令。'
