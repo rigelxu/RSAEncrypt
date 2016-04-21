@@ -14,7 +14,7 @@ pod 'RSAEncrypt'
 
 - +(NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key; //使用 publickey 对String 加密
 - +(NSString *)PublicKeyStringFromFile:(NSString *)fileName; //从.der 文件提取 String publickey
-- openssl公钥对生成方法。
+- openssl密钥对生成方法。
 
 
 ## TODO
