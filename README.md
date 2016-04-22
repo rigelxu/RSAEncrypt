@@ -24,6 +24,8 @@ pod 'RSAEncrypt'
 * 添加对RSA 文件的支持。
 * 添加验签方法
 * 单元测试
+* Java加解密
+* 对Padding的说明
 
 
 ## Requirements
