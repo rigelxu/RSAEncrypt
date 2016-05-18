@@ -12,8 +12,9 @@ pod 'RSAEncrypt'
 
 ## Features
 
-- +(NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key; //使用 publickey 对String 加密
-- +(NSString *)PublicKeyStringFromFile:(NSString *)fileName; //从.der 文件提取 String publickey
+- 对明文进行 RSA 加密
+- 支持指定 Padding
+- 从指定公钥 der 文件导出公钥字符串
 - openssl密钥对生成方法。
 
 ## About Padding

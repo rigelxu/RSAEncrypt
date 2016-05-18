@@ -64,7 +64,7 @@ static SecKeyRef _public_key=nil;
     return [Base64 encode:encryptedData];
 }
 
-//使用公钥 key 加密字符串
+//使用公钥 key 加密字符串,不使用SecPadding
 + (NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key{
     return [RSAEncrypt RSAEncrypt:original publicKey:key secPadding:kSecPaddingNone];
 }
