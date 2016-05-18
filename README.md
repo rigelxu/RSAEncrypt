@@ -16,6 +16,8 @@ pod 'RSAEncrypt'
 - +(NSString *)PublicKeyStringFromFile:(NSString *)fileName; //从.der 文件提取 String publickey
 - openssl密钥对生成方法。
 
+## About Padding
+不使用Padding,同一明文每次加密后的密文是一样的， 使用不同的 Padding 密文长度会有变化。具体使用哪种 Padding 要与服务端保持一致。
 
 ## TODO
 

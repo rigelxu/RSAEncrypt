@@ -33,8 +33,8 @@ static SecKeyRef _public_key=nil;
     return _public_key;
 }
 
-//使用公钥 key 加密字符串
-+ (NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key{
+//使用公钥 key 加密字符串，并使用指定的SecPadding
++ (NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key secPadding:(SecPadding)padding{
     SecKeyRef keyRef = [self PublicKeyWithString:key];
     size_t cipherBufferSize = SecKeyGetBlockSize(keyRef);
     uint8_t *cipherBuffer = malloc(cipherBufferSize * sizeof(uint8_t));
@@ -60,8 +60,13 @@ static SecKeyRef _public_key=nil;
         }
     }
     if (cipherBuffer) free(cipherBuffer);
-
+    
     return [Base64 encode:encryptedData];
+}
+
+//使用公钥 key 加密字符串
++ (NSString *) RSAEncrypt:(NSString*)original publicKey:(NSString *)key{
+    return [RSAEncrypt RSAEncrypt:original publicKey:key secPadding:kSecPaddingNone];
 }
 
 @end
