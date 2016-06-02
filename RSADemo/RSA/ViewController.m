@@ -12,7 +12,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [RSAEncrypt getPublicKeyFromFile];
+    NSLog(@"%@", [RSAEncrypt PublicKeyStringFromFile:@"public_key"]);
     NSLog(@"%@", [RSAEncrypt RSAEncrypt:@"zn111111" publicKey:RSA_KEY_BASE64]);
 }
 

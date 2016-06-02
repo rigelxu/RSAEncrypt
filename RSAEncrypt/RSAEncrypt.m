@@ -9,14 +9,14 @@ static SecKeyRef _public_key=nil;
     NSString *publicKeyPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"der"];
     NSData *publicKeyData = [NSData dataWithContentsOfFile:publicKeyPath];
     
-    NSString *publicKeyStr = [Base64 encode:publicKeyData];
+    NSString *publicKeyStr = [publicKeyData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
     return publicKeyStr;
 }
 
 // 从公钥证书文件中获取到公钥的SecKeyRef指针
 + (SecKeyRef)PublicKeyWithString:(NSString *)key{
     if(_public_key == nil){
-        NSData *certificateData = [Base64 decode:key];
+        NSData *certificateData = [[NSData alloc] initWithBase64EncodedString:key options:NSDataBase64DecodingIgnoreUnknownCharacters];
         SecCertificateRef myCertificate =  SecCertificateCreateWithData(kCFAllocatorDefault, (CFDataRef)certificateData);
         SecPolicyRef myPolicy = SecPolicyCreateBasicX509();
         SecTrustRef myTrust;
@@ -61,7 +61,7 @@ static SecKeyRef _public_key=nil;
     }
     if (cipherBuffer) free(cipherBuffer);
     
-    return [Base64 encode:encryptedData];
+    return [encryptedData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
 }
 
 //使用公钥 key 加密字符串,不使用SecPadding

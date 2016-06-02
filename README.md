@@ -23,7 +23,6 @@ pod 'RSAEncrypt'
 ## TODO
 
 * 添加解密方法。
-* 解决 spec 依赖 Base64问题。
 * 添加对RSA 文件的支持。
 * 添加验签方法
 * 单元测试

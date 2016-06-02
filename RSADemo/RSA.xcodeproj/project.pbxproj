@@ -18,7 +18,6 @@
 		338C47F71C23B271000D29DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338C47F51C23B271000D29DF /* Main.storyboard */; };
 		338C47F91C23B271000D29DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338C47F81C23B271000D29DF /* Assets.xcassets */; };
 		338C47FC1C23B271000D29DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338C47FA1C23B271000D29DF /* LaunchScreen.storyboard */; };
-		33B82D531CC27F2B00B241F4 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B82D521CC27F2B00B241F4 /* Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +37,6 @@
 		338C47F81C23B271000D29DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338C47FB1C23B271000D29DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338C47FD1C23B271000D29DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33B82D511CC27F2B00B241F4 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		33B82D521CC27F2B00B241F4 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +64,6 @@
 		335FCB8F1CC263F400CE9595 /* RSAEncrypt */ = {
 			isa = PBXGroup;
 			children = (
-				33B82D511CC27F2B00B241F4 /* Base64.h */,
-				33B82D521CC27F2B00B241F4 /* Base64.m */,
 				335FCB901CC263F400CE9595 /* RSAEncrypt.h */,
 				335FCB911CC263F400CE9595 /* RSAEncrypt.m */,
 			);
@@ -194,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				338C47F41C23B271000D29DF /* ViewController.m in Sources */,
-				33B82D531CC27F2B00B241F4 /* Base64.m in Sources */,
 				338C47F11C23B271000D29DF /* AppDelegate.m in Sources */,
 				335FCB921CC263F400CE9595 /* RSAEncrypt.m in Sources */,
 				338C47EE1C23B271000D29DF /* main.m in Sources */,
