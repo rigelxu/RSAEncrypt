@@ -44,7 +44,7 @@ pod 'RSAEncrypt'
 ```
 
 ### Manually
-直接添加RSAEncrypt至工程，如果你的工程没有Base64可以需要同时导入[Base64](https://github.com/nicklockwood/Base64)
+直接添加RSAEncrypt至工程.
 
 
 ##openssl生成密钥对
