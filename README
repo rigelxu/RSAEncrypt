@@ -3,7 +3,7 @@ RSAEncrypt
 
 ### Quick start
 
-RSAEncrypt 支持 [CocoaPods](http://cocoapods.org).  添加下面配置到你的 Podfile:
+使用 [CocoaPods](http://cocoapods.org)来安装RSAEncrypt:
 
 ```ruby
 pod 'RSAEncrypt'
