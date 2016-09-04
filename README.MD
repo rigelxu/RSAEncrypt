@@ -16,31 +16,12 @@ RSAEncrypt是简单的RSA加密库。使用字符串进行加密，包含使用 
 - 从指定公钥 der 文件导出公钥字符串
 - openssl密钥对生成方法。
 
-## About Padding
-不使用Padding,同一明文每次加密后的密文是一样的， 使用不同的 Padding 密文长度会有变化。具体使用哪种 Padding 要与服务端保持一致。
-
-## TODO
-
-* 添加解密方法。
-* 添加对RSA 文件的支持。
-* 添加验签方法
-* 明文解密支持
-* Carthage支持
-* 单元测试
-* Java加解密
-* 对Padding的说明
-
-
-## Requirements
-
-- iOS 7.0+ / Mac OS X 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 7.2+
 
 ## Usage
 
 ### Cocoapods
 
-```ruby
+```
 pod 'RSAEncrypt'
 ```
 
@@ -48,7 +29,10 @@ pod 'RSAEncrypt'
 直接添加RSAEncrypt至工程.
 
 
-##openssl生成密钥对
+## About Padding
+不使用Padding,同一明文每次加密后的密文是一样的， 使用不同的 Padding 密文长度会有变化。具体使用哪种 Padding 要与服务端保持一致。
+
+##openssl生成密钥对步骤
 
 **输入如下命令,根据提示输入信息:**
 
@@ -109,6 +93,16 @@ openssl rsa -in private_key.pem -out rsa_public_key_android.pem -pubout
 	
 ####其实iOS可以和Android使用同一公钥串(使用私钥导出的),但是此种公钥串iOS端加密需要操作kenchain,在一些极端情况下会出现加密失败问题. 而使用第一种方式的公钥,不需要操作keychain,可以避免加密失败的问题.
 
+
+## ToDo
+
+* 添加解密方法。
+* 添加对RSA 文件的支持。
+* 添加验签方法
+* 明文解密支持
+* Carthage支持
+* 单元测试
+* Java加解密
 
 ## License
 
