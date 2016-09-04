@@ -1,17 +1,16 @@
 RSAEncrypt
 ===================
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/rigelxu/RSAEncrypt/master/LICENSE)&nbsp;
+[![CocoaPods](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg?style=flat)](https://cocoapods.org/?q=RSAEncrypt)&nbsp;
+[![CocoaPods](https://img.shields.io/badge/platform-iOS-lightgrey.svg?style=flat)](https://cocoapods.org/?q=RSAEncrypt)&nbsp;
+[![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 
-### Quick start
-
-使用 [CocoaPods](http://cocoapods.org)来安装RSAEncrypt:
-
-```ruby
-pod 'RSAEncrypt'
-```
+RSAEncrypt是简单的RSA加密库。使用字符串进行加密，包含使用 openssl 生成密钥对步骤。RSAEncrypt使用公钥文件 base64 字符串进行加密，避免了使用Security Framework API添加伪造证书字符串加密方式，可能会导致加密永久失败的问题（此问题重装应用才可解决）。
 
 
 ## Features
 
+- 非伪造证书方式
 - 对明文进行 RSA 加密
 - 支持指定 Padding
 - 从指定公钥 der 文件导出公钥字符串
@@ -25,6 +24,8 @@ pod 'RSAEncrypt'
 * 添加解密方法。
 * 添加对RSA 文件的支持。
 * 添加验签方法
+* 明文解密支持
+* Carthage支持
 * 单元测试
 * Java加解密
 * 对Padding的说明
@@ -35,7 +36,7 @@ pod 'RSAEncrypt'
 - iOS 7.0+ / Mac OS X 10.9+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 7.2+
 
-## Installation
+## Usage
 
 ### Cocoapods
 
