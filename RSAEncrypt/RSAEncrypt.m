@@ -46,7 +46,7 @@ static SecKeyRef _public_key=nil;
         NSInteger bufferSize = MIN(blockSize,[stringBytes length] - i * blockSize);
         NSData *buffer = [stringBytes subdataWithRange:NSMakeRange(i * blockSize, bufferSize)];
         OSStatus status = SecKeyEncrypt(keyRef,
-                                        kSecPaddingNone,
+                                        padding,
                                         (const uint8_t *)[buffer bytes],
                                         [buffer length],
                                         cipherBuffer,
